@@ -1,7 +1,7 @@
 let images = [{
-    url: "../images/banner_01.jpg",
+    url: "../images/banner_01.jpg"
   }, {
-    url: "../images/banner_02.jpg",
+    url: "../images/banner_02.jpg"
   }, {
     url: "../images/banner_03.jpg"
 }];
