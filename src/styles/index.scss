@@ -1,3 +1,4 @@
-body {
-    background-color: blueviolet;
-}
+@import './general_scss/general.scss';
+@import './general_scss/reset.scss';
+@import './module_scss/header.scss';
+@import './module_scss/slider.scss';

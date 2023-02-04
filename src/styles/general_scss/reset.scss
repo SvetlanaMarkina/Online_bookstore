@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button:focus, button:active {
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+    background-color: transparent;
+}
+
+header, nav, main {
+	display: block;
+}

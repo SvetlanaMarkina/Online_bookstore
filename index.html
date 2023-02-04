@@ -5,9 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online-bookstore</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;900&family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./dist/main.css">
 </head>
 <body>
+    <header class="header">
+        <div class="wrap" style="align-items: center;">
+            <h1 class="logo"><a href="#">Bookshop</a></h1>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item" class="nav__item_active"><a>books</a></li>
+                    <li class="nav__item"><a href="#">audiobooks</a></li>
+                    <li class="nav__item"><a href="#">Stationery & gifts</a></li>
+                    <li class="nav__item"><a href="#">blog</a></li>
+                </ul>    
+            </nav>
+            <div class="buttons">
+                <ul class="buttons__list">
+                    <li class="buttons__item"><button><img src="./src/images/user.png" alt="user"></button></li>
+                    <li class="buttons__item"><button><img src="./src/images/search.png" alt="search"></button></li>
+                    <li class="buttons__item"><button class="buttons__cart"><img src="./src/images/cart.png" alt="cart">
+                        <svg width="13" height="13" viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="6.5" cy="6.5" r="6.5" fill="#FF353A"/>
+                        <text id="cartCount" y="10" x="3.25" fill="#ffffff">0</text>
+                      </svg></button>
+                    </li>
+                </ul>   
+            </div>
+        </div>
+    </header>
+
+
+    <main class="main">
+        <div class="wrap">
+            <div class="slider">
+                <div class="slider__images"></div>
+                <div class="slider__dots"></div> 
+            </div>
+            <a href="#" class="slider__button01">
+                <h2 class="linkBtn">Change old book on new</h2>
+                <img src="./src/images/arrow.png" alt="arrow">
+            </a>
+            <a href="#" class="slider__button02">
+                <h2 class="linkBtn">top 100 books 2022</h2>
+                <img src="./src/images/arrow.png" alt="arrow">
+            </a>  
+        </div>
+
+        <div class="books">
+            <div class="wrap">
+                <ul class="books__categories"></ul>
+                <ul class="books__info"></ul>
+            </div>
+        </div>
+    </main>
+    
+
+    
  <script src="./dist/main.js"></script>   
 </body>
 </html>

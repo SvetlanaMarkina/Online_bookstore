@@ -1,5 +1,5 @@
-import '../dist/main'
+
 import './styles/index.scss'
-import './js/Slider'
+import { initSlider } from './js/Slider.js'
 
 
