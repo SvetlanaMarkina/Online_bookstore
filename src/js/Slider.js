@@ -1,9 +1,9 @@
 let images = [{
-    url: "../images/banner_01.jpg"
+    url: "./static/images/banner_01.jpg"
   }, {
-    url: "../images/banner_02.jpg"
+    url: "./static/images/banner_02.jpg"
   }, {
-    url: "../images/banner_03.jpg"
+    url: "./static/images/banner_03.jpg"
 }];
 
 function initSlider(options) {
@@ -74,4 +74,4 @@ document.addEventListener("DOMContentLoaded", function() {
   initSlider(sliderOptions);
 });
 
-export { initSlider};
+export { initSlider, images};

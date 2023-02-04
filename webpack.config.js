@@ -1,6 +1,7 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 
 module.exports = {
@@ -9,8 +10,13 @@ module.exports = {
         path: path.resolve(__dirname, './dist'),
         filename: 'main.js'
     },
-    mode: 'production',
-    plugins: [new MiniCssExtractPlugin()],
+    mode: 'development',
+    plugins: [
+      new MiniCssExtractPlugin(),
+      new CopyWebpackPlugin({
+        patterns: [{ from: "./src/static"}],
+      }),
+    ],
     module: {
         rules: [
           {
