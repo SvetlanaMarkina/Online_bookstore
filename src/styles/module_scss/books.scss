@@ -1,0 +1,92 @@
+.books__info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 75px;
+    row-gap: 85px;
+    // margin-top: 130px;
+    margin-left: -60px;
+    .books__item {
+      display: flex;
+      align-items: center;
+      max-height: 300px;
+      .cover {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        min-width: 212px;
+        height: 300px;
+        box-shadow: 0px 24px 36px rgba(53, 49, 84, 0.28);
+      }
+      .descr {
+        max-width: 180px;
+        margin-left: 36px;
+
+        .author {
+          font-family: 'Open Sans';
+          font-weight: 400;
+          font-size: 10px;
+          text-transform: capitalize;
+          color: #5C6A79;
+          margin-bottom: 4px;
+        }
+
+        .title {
+          font-family: 'Montserrat';
+          font-weight: 700;
+          font-size: 16px;
+          color: #1C2A39;
+          margin-bottom: 4px;
+        }
+
+        .text {
+          font-family: 'Open Sans';
+          font-weight: 400;
+          font-size: 10px;
+          text-transform: capitalize;
+          line-height: 14px;
+          color: #5C6A79;
+        }
+  
+        .rate {
+          margin-bottom: 16px;
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          span {
+            font-family: 'Open Sans';
+            font-weight: 400;
+            font-size: 13px;
+            color: #5C6A79;
+            margin-left: 6px;
+          }
+        }
+  
+        .price {
+          font-family: 'Montserrat';
+          font-weight: 700;
+          font-size: 13px;
+          text-transform: uppercase;
+          color: #1C2A39;
+          margin: 16px 0;
+        }
+  
+        .buyBtn {
+          font-family: 'Montserrat';
+          font-weight: 700;
+          font-size: 8px;
+          text-transform: uppercase;
+          color: #4C3DB2;
+          padding: 17px 52px;
+          border: 1px solid #4C3DB2;
+          &-inCart {
+            border-color: #EEEDF5;
+            color: #5C6A79;
+            &:hover {
+              color: #5C6A79;
+              background-color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }

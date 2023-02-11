@@ -1,9 +1,9 @@
 let images = [{
-    url: "./static/images/banner_01.jpg"
+    url: "./dist/images/banner_01.jpg"
   }, {
-    url: "./static/images/banner_02.jpg"
+    url: "./dist/images/banner_02.jpg"
   }, {
-    url: "./static/images/banner_03.jpg"
+    url: "./dist/images/banner_03.jpg"
 }];
 
 function initSlider(options) {
@@ -67,7 +67,7 @@ function initSlider(options) {
 let sliderOptions = {
   dots: true,
   autoplay: true,
-  autoplayInterval: 1000
+  autoplayInterval: 5000
 };
 
 document.addEventListener("DOMContentLoaded", function() {

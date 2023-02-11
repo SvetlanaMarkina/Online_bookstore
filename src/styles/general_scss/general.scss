@@ -1,4 +1,4 @@
-.body {
+body {
     background-color: white;
 }
 
@@ -14,5 +14,26 @@
     padding-bottom: 74px;
 }
 
+.books {
+    padding-top: 105px;
+  .wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+  .moreBtn {
+    display: block;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 10px;
+    text-transform: uppercase;
+    color: #4C3DB2;
+    border: 1px solid #4C3DB2;
+    margin: 0 auto;
+    padding: 18px 62px;
+    margin-top: 80px;
+  }
+}
 
 

@@ -1,0 +1,44 @@
+.books__categories {
+    width: 416px;
+    height: 710px;
+    background-color: #EFEEF6;
+    margin-left: -106px;
+    margin-top: -48px;
+
+    .category {
+        position: relative;
+        top: 45px;
+        left: 110px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: capitalize;
+        color: #5C6A79;
+        cursor: pointer;
+        margin-bottom: 23px;
+        &:last-child {
+            margin: 0;
+        }
+        &-active {
+            position: relative;
+            color: #1C2A39;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            &::before {
+                content: '';
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background: #756AD3;
+                position: absolute;
+                left: -14px;
+                bottom: 8px;
+
+            }
+        }
+    }
+}
+
